@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="index.css">
+        <title>Quiz</title>
+    </head>
+    <body>
+        <div id="quizville">
+                <h2># QuizVille</h2>
+                <img src="./GG-Logo-Black_600x.png" alt="">
+                <ul>
+                    <li style="background-color: black; color:black;">....</li>
+                    <li style="background-color: yellow; color:yellow;">....</li>
+                    <li style="background-color: red; color:red;">....</li>
+                </ul>
+        </div>
+        
+        <div id="container">
+            <div id="quizNum"></div>
+            <div id="container1" class="display">
+                <div id="quiz1" style="color:yellow;">......... Hello,There .......<br/>.Welcome to Quizville.<br/> <hr> Click the " Quiz Library " above to select a Quiz to start with.<br/>***Select(Click) the answer from the options given below each question.<br/></div>
+                <div id="choices">
+                    <div class="choice" id="A1" onclick="style='font-weight:bold;', checkAnswer('A',0,'A1'),displayNone('container1')"></div>
+                    <div class="choice" id="B1" onclick="style='font-weight:bold;',checkAnswer('B',0,'B1'),displayNone('container1')"></div>
+                    <div class="choice" id="C1" onclick="style='font-weight:bold; ',checkAnswer('C',0,'C1'),displayNone('container1')"></div>
+                </div>
+            </div>
+            <div id="container2" class="display">
+                <div id="quiz2" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A2" onclick="style='font-weight:bold; ',checkAnswer('A',1,'A2'),displayNone('container2')"></div>
+                    <div class="choice" id="B2" onclick="style='font-weight:bold; ', checkAnswer('B',1,'B2'),displayNone('container2')"></div>
+                    <div class="choice" id="C2" onclick="style='font-weight:bold; ', checkAnswer('C',1,'C2'),displayNone('container2')"></div>
+                </div>
+            </div>
+            <div id="container3" class="display">
+                <div id="quiz3" style="color:yellow;"></div>
+                <div id="choices"> 
+                    <div class="choice" id="A3" onclick="style='font-weight:bold; ',checkAnswer('A',2,'A3'),displayNone('container3')"></div>
+                    <div class="choice" id="B3" onclick="style='font-weight:bold; ', checkAnswer('B',2,'B3'),displayNone('container3')"></div>
+                    <div class="choice" id="C3" onclick="style='font-weight:bold; ', checkAnswer('C',2,'C3'),displayNone('container3')"></div>
+                </div>
+            </div>
+            <div id="container4" class="display">
+                <div id="quiz4" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A4" onclick="style='font-weight:bold; ',checkAnswer('A',3,'A4'),displayNone('container4')"></div>
+                    <div class="choice" id="B4" onclick="style='font-weight:bold; ', checkAnswer('B',3,'B4'),displayNone('container4')"></div>
+                    <div class="choice" id="C4" onclick="style='font-weight:bold; ', checkAnswer('C',3,'C4'),displayNone('container4')"></div>
+                </div>
+            </div>
+            <div id="container5" class="display">
+                <div id="quiz5" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A5" onclick="style='font-weight:bold; ',checkAnswer('A',4,'A5'),displayNone('container5')"></div>
+                    <div class="choice" id="B5" onclick="style='font-weight:bold; ', checkAnswer('B',4,'B5'),displayNone('container5')"></div>
+                    <div class="choice" id="C5" onclick="style='font-weight:bold; ', checkAnswer('C',4,'C5'),displayNone('container5')"></div>
+                </div>
+            </div>
+            <div id="container6" class="display">
+                <div id="quiz6" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A6" onclick="style='font-weight:bold; ',checkAnswer('A',5,'A6'),displayNone('container6')"></div>
+                    <div class="choice" id="B6" onclick="style='font-weight:bold; ', checkAnswer('B',5,'B6'),displayNone('container6')"></div>
+                    <div class="choice" id="C6" onclick="style='font-weight:bold; ', checkAnswer('C',5,'C6'),displayNone('container6')"></div>
+                </div>
+            </div>
+            <div id="container7" class="display">
+                <div id="quiz7" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A7" onclick="style='font-weight:bold; ',checkAnswer('A',6,'A7'),displayNone('container7')"></div>
+                    <div class="choice" id="B7" onclick="style='font-weight:bold; ', checkAnswer('B',6,'B7'),displayNone('container7')"></div>
+                    <div class="choice" id="C7" onclick="style='font-weight:bold; ', checkAnswer('C',6,'C7'),displayNone('container7')"></div>
+                </div>
+            </div>
+            <div id="container8" class="display">
+                <div id="quiz8"style="color:yellow;" ></div>
+                <div id="choices">
+                    <div class="choice" id="A8" onclick="style='font-weight:bold; ',checkAnswer('A',7,'A8'),displayNone('container8')"></div>
+                    <div class="choice" id="B8" onclick="style='font-weight:bold; ', checkAnswer('B',7,'B8'),displayNone('container8')"></div>
+                    <div class="choice" id="C8" onclick="style='font-weight:bold; ', checkAnswer('C',7,'B8'),displayNone('container8')"></div>
+                </div>
+            </div>
+            <div id="container9" class="display">
+                <div id="quiz9" style="color:yellow;"></div>
+                <div id="choices">
+                    <div class="choice" id="A9" onclick="style='font-weight:bold; ',checkAnswer('A',8,'A9'),displayNone('container9')"></div>
+                    <div class="choice" id="B9" onclick="style='font-weight:bold; ', checkAnswer('B',8,'B9'),displayNone('container9')"></div>
+                    <div class="choice" id="C9" onclick="style='font-weight:bold; ', checkAnswer('C',8,'C9'),displayNone('container9')"></div>
+                </div>
+            </div>
+            <div id="container10" class="display">
+                <div id="quiz10"style="color:yellow;" ></div>
+                <div id="choices">
+                    <div class="choice" id="A10" onclick="style='font-weight:bold; ',eliminate(),checkAnswer('A',9,'A10'),displayNone('container10')"></div>
+                    <div class="choice" id="B10" onclick="style='font-weight:bold; ',eliminate(), checkAnswer('B',9,'B10'),displayNone('container10')"></div>
+                    <div class="choice" id="C10" onclick="style='font-weight:bold; ',eliminate(), checkAnswer('C',9,'C10'),displayNone('container10')"></div>
+                </div>
+            </div>
+            <button id="Submitt" onclick="score1(), message(), reload(),reviewQN()">
+                Submitt to Get Score 
+                
+            </button>
+            <div id="score"></div>
+            <div id="message"></div>
+            
+        </div>    
+        <div id="progress">
+            <div id="bar"></div>
+        </div>
+        <div id="tests" onclick="showlib()"> 
+            <div id="store" >
+                <h2>Quiz library</h2>
+            </div>
+            <div id="library">
+                <div id="One" onclick="testOne()" class="testQN">Quiz One</div>
+                <div id="Two" onclick="testTwo()" class="testQN">Quiz Two</div>
+                <div id="Three" onclick="testThree()" class="testQN">Quiz Three</div>
+                <div id="Four" onclick="testFour()" class="testQN">Quiz Four</div>
+                <div id="Five" onclick="testFive()" class="testQN">Quiz Five</div>
+                <div id="Six" onclick="testSix()" class="testQN">Quiz Six</div>
+                <div id="Seven" onclick="testSeven()" class="testQN">Quiz Seven</div>
+                <div id="Eight" onclick="testEight()" class="testQN">Quiz Eight</div>
+                <div id="Nine" onclick="testNine()" class="testQN">Quiz Nine</div>
+            </div>
+            <!--<div id="Four" onclick="testFour()" class="testQN">Test Four</div>-->
+        </div>
+        
+        <div id="container11">
+            <div  style="text-align: center;"><h1>Review of Test</h1></div>
+            <div id="container1.1">
+            </div>
+            <div id="container1.2">
+            </div>
+            <div id="container1.3">
+            </div>
+            <div id="container1.4">
+            </div>
+            <div id="container1.5">
+            </div>
+            <div id="container1.6">
+            </div>
+            <div id="container1.7">
+            </div>
+            <div id="container1.8">
+            </div>
+            <div id="container1.9">
+            </div>
+            <div id="container1.10">
+            </div>
+        </div>
+       
+    </body>
+    <script src="index.js"></script>
+
+</html>
